@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A modern, responsive portfolio to showcase my work.",
+    "category": "JS",
+    "image": "assets/images/portfolio-thumb.jpg"
+  },
+  {
+    "title": "Animated Landing Page",
+    "description": "Landing page with GSAP-powered hero animations and smooth scroll.",
+    "category": "Animations",
+    "image": "assets/images/landing-thumb.jpg"
+  },
+  {
+    "title": "Todo App",
+    "description": "A simple todo app with filtering and local storage.",
+    "category": "JS",
+    "image": "assets/images/todo-thumb.jpg"
+  }
+]

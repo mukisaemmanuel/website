@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --primary: #2d2e32;
+  --accent: #4f8cff;
+  --bg: #f5f6fa;
+  --text: #222;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+nav {
+  background: var(--primary);
+  padding: 1rem 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+nav a.active,
+nav a:hover {
+  color: var(--accent);
+}
+
+header#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10vw 2rem 10vw;
+  background: var(--white);
+  min-height: 60vh;
+}
+.hero-content {
+  max-width: 50%;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+#see-work-btn {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#see-work-btn:hover {
+  background: #2563eb;
+}
+.hero-image img {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+section {
+  padding: 3rem 10vw;
+}
+
+.preview-cards,
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.filters {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.filter-btn {
+  background: var(--white);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* Contact Form */
+#contact-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+#contact-form label {
+  font-weight: 600;
+}
+#contact-form input,
+#contact-form textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+#contact-form button {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 0;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+#contact-form button:hover {
+  background: #2563eb;
+}
+#form-status {
+  min-height: 1.5em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  header#hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  nav ul {
+    gap: 1rem;
+  }
+  header#hero,
+  section {
+    padding: 2rem 4vw;
+  }
+  .preview-cards,
+  .projects-list {
+    gap: 1rem;
+  }
+  #contact-form {
+    padding: 1rem;
+  }
+}

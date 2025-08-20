@@ -1,0 +1,40 @@
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Slide-in from left */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.slide-in-left.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Slide-in from right */
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s, transform 0.7s;
+}
+.slide-in-right.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Button hover pop */
+.btn-pop {
+  transition: transform 0.15s;
+}
+.btn-pop:hover {
+  transform: scale(1.07);
+}

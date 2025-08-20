@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="projects-header">
+        <h1>My Projects</h1>
+        <div class="filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="js">JS</button>
+          <button class="filter-btn" data-category="animations">
+            Animations
+          </button>
+        </div>
+      </section>
+      <section class="projects-list" id="projects-list">
+        <!-- JS will populate project cards here -->
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/gsap-animations.js"></script>
+  </body>
+</html>
